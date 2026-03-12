@@ -5,7 +5,7 @@ package es.unizar.eina.vv6f.collatz;
  * que la inicia.
  */
 public class SecuenciaCollatz {
-
+    private long inicio;
 	/**
 	 * Devuelve el término que sigue a «n» en una secuencia de Collatz.
 	 *
@@ -15,7 +15,12 @@ public class SecuenciaCollatz {
 	 */
 	public static long siguienteCollatz(long n) {
 		// TODO Implementar este método
-		return 0;
+        if(n % 2 == 0){
+            n = n/2;
+        }else{
+            n = 3*n + 1;
+        }
+		return n;
 	}
 
 	/*
@@ -25,6 +30,7 @@ public class SecuenciaCollatz {
 	 */
 	public SecuenciaCollatz(long inicio) {
 		// TODO Implementar este constructor
+        this.inicio = inicio;
 	}
 
 	/**
@@ -35,6 +41,12 @@ public class SecuenciaCollatz {
 	 */
 	public int longitud() {
 		// TODO Implementar este método
-		return 0;
+        long i = inicio;
+        int len = 0;
+        while(i != 1){
+            i = siguienteCollatz(i);
+            len++;
+        }
+		return len;
 	}
 }
