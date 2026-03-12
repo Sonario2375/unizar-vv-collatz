@@ -27,24 +27,20 @@ superen el límite de un millón.
 
 ### Tareas
 
- 1. Descargad o clonad el proyecto «unizar-vv-collatz» de GitHub.
- 2. El proyecto está configurado para poder utilizar tanto JUnit 4 como JUnit 5.
-    Para evitar mezclar clases del mismo nombre que están en los dos entornos,
-    se recomienda eliminar una de las dos dependencias (menú ``File > 
-    Project Structure... > Project Settings > Modules``).
- 2. Observad las clases `SecuenciaCollatz`,`Main` y sus métodos.
- 3. Clase `SecuenciasCollatzTestSiguiente`
-    - Diseñad pruebas basadas en la especificación para el método 
-      `siguienteCollatz` aplicando particiones de equivalencia.
-    - Por cada prueba diseñada:
-        - Escribid un test en JUnit.
-        - Ejecutad el test para comprobar que falla.
-        - Añadid el código necesario para que el test pase.
-        - Comprobad que la cobertura del método `siguienteCollatz` en modo 
-          _tracing_ es del 100%.
-    - Usad la secuencia de ejemplo del enunciado como _test basis_ para obtener
-      casos de prueba adicionales, aunque sean redundantes.  
-    - Convertid las pruebas diseñadas en un test JUnit parametrizado.
+1. Descargad o clonad el proyecto «unizar-vv-collatz» de GitHub.
+
+2. En proyecto suministrado en este repositorio no está configurado todavía para utilizar JUnit.
+
+   Para configurarlo:
+   - Project Structure | Libraries | + (New Project Library) | From Maven…
+   - org.junit.jupiter:junit-jupiter:6.0.3
+   - Seleccionad _Transitive dependencies_, _Sources_, _JavaDocs_ y _Annotations_
+   - Aceptad que se añada al módulo unizar-vv-collatz.
+   - En _Modules_, estableced su ámbito como _Test_.
+
+3. Añadid también la biblioteca Hamcrest por si queréis escribir test utilizando  la aserción `assertThat`.
+Para ello, repetid los pasos anteriores con las coordenadas `org.hamcrest:hamcrest:jar:3.0`.
+
  
  4. Clase `SecuenciasCollatzTestLongitud`
     - Diseñad pruebas para el método `longitud`.

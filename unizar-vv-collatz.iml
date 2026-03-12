@@ -10,7 +10,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="TEST" name="JUnit 4" level="project" />
-    <orderEntry type="library" scope="TEST" name="JUnit 5" level="project" />
   </component>
 </module>
