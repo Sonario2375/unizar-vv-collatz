@@ -54,7 +54,7 @@ Para ello, repetid los pasos anteriores con las coordenadas `org.hamcrest:hamcre
          _tracing_ es del 100 %.
    - Usad la secuencia de ejemplo del enunciado como _test basis_ para obtener
      casos de prueba adicionales, aunque sean redundantes.  
-   - Convertid las pruebas diseñadas en tests JUnit parametrizados. Utilizad test parametrizados con las etiquetas `@CsvSource` y `@CsvFileSource` y test dinámicos.
+   - Convertid las pruebas diseñadas en test JUnit parametrizados. Utilizad test parametrizados con las etiquetas `@CsvSource` y `@CsvFileSource` y test dinámicos.
  
 6. Clase `SecuenciasCollatzTestLongitud`
    - Diseñad pruebas para el método `longitud`.
@@ -76,4 +76,4 @@ Para ello, repetid los pasos anteriores con las coordenadas `org.hamcrest:hamcre
    - Añadid pruebas hasta alcanzar una cobertura del 100% en modo _tracing_.
 
 9. Si acabáis, podéis repetir la escritura de test parametrizados utilizando JUnit 4.
-Para ello, tendréis que utilizar la biblioteca de coordenadas Maven `junit:junit:jar:4.13.2`. 
+Para ello, tendréis que utilizar la biblioteca de coordenadas Maven `junit:junit:jar:4.13.2`.
